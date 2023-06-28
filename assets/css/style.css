@@ -6,3 +6,31 @@
   --yellowGreen: #9BC53D;
   --thulianPink: #E56399;
 }
+
+body {
+  font-family: 'Oxanium', monospace;
+}
+
+.border-success {
+  border-color: var(--yellowGreen) !important;
+}
+
+.text-success {
+  color: var(--yellowGreen) !important;
+}
+
+.btn-success {
+  background: var(--yellowGreen);
+}
+
+.border-warning {
+  border-color: var(--rawSienna) !important;
+}
+
+.text-warning {
+  color: var(--rawSienna) !important;
+}
+
+.btn-warning {
+  background: var(--rawSienna);
+}
