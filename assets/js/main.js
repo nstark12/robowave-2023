@@ -13,6 +13,11 @@ $(document).ready(function() {
 
         new Typewriter(currentEl, {
             loop: true,
-        }).typeString(innerText).start()
-    }
+        }).typeString(innerText)
+        .pauseFor(1000)
+        .start()
+    };
+
+    // glitch
+    PowerGlitch.glitch('.glitch');
 });
