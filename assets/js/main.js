@@ -19,5 +19,7 @@ $(document).ready(function() {
     };
 
     // glitch
-    PowerGlitch.glitch('.glitch');
+    PowerGlitch.glitch('.glitch', {
+        hideOverflow: true,
+    })
 });
