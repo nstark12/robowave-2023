@@ -18,7 +18,7 @@
   <section id="intro" class="section">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
             <img src="./assets/images/logo.svg" alt="RoboWave 2023 Logo" class="mb-5">
             <h1 class="display-4 fw-bold">Welcome to the future</h1>
             <p class="fs-3 typewriter-effect">Building robots today for a better tomorrow.</p>
@@ -31,7 +31,7 @@
   <section id="new" class="section">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
           <h2 class="display-4 text-success fw-bold">New Robots</h2>
           <p class="fs-3 typewriter-effect">Shiny, brand spankin' new robots.</p>
         </div>
@@ -97,7 +97,7 @@
   <section id="used" class="section">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
           <h2 class="display-4 text-warning fw-bold">Used Robots</h2>
           <p class="fs-3 typewriter-effect">We refurbish, recycle, and repair used robots.</p>
         </div>
@@ -114,6 +114,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-warning fw-bold">LG-679</h5>
                       <p class="card-text text-white">This trusty robot is a hard worker! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <p class="card-text" data-lastErrorDate="2023-06-26"></p>
                       <button class="btn btn-warning">Add to Cart</button>
                     </div>
                   </div>
@@ -131,6 +132,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-warning fw-bold">TR-563</h5>
                       <p class="card-text text-white">This trusty robot is a hard worker! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <p class="card-text" data-lastErrorDate="2023-06-02"></p>
                       <button class="btn btn-warning">Add to Cart</button>
                     </div>
                   </div>
@@ -148,6 +150,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-warning fw-bold">WRT-45</h5>
                       <p class="card-text text-white">This trusty robot is a hard worker! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <p class="card-text" data-lastErrorDate="2020-06-26"></p>
                       <button class="btn btn-warning">Add to Cart</button>
                     </div>
                   </div>
@@ -163,7 +166,7 @@
   <section id="contact" class="section">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
           <h2 class="display-4 fw-bold text-success">Plug in</h2>
           <p class="fs-3 text-white typewriter-effect">Sign up for the latest updates straight to your inbox.</p>
         </div>
@@ -199,6 +202,8 @@
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
   <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 
   <script src="./assets/js/main.js"></script>
 </body>

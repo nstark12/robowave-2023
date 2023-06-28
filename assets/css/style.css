@@ -11,7 +11,7 @@ body {
   font-family: 'Oxanium', monospace;
 }
 
-.border-success {
+.border-success, .btn-success {
   border-color: var(--yellowGreen) !important;
 }
 
@@ -31,6 +31,51 @@ body {
   color: var(--rawSienna) !important;
 }
 
-.btn-warning {
+.btn-warning, .border-warning {
   background: var(--rawSienna);
 }
+
+.btn-primary {
+  background: var(--horizon);
+}
+
+.border-primary, .btn-primary {
+  border-color: var(--horizon) !important;
+}
+
+/* override fullpage js nav dots */
+#fp-nav ul li a span {
+  background: white;
+}
+
+/* background images */
+
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fp-overflow {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8309524493391106) 0%, rgba(0,0,0,0.23151267342874648) 100%);
+  height: 100%;
+}
+
+#intro {
+  background-image: url(../images/large/robot-on-rocks.jpg);
+}
+
+#new {
+  background-image: url(../images/large/evou-robots.jpg);
+}
+
+#used {
+  background-image: url(../images/large/refurbished-robots.jpg);
+}
+
+#contact {
+  background-image: url(../images/large/robots-among-us-2.jpg);
+}
+
