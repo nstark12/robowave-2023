@@ -51,6 +51,34 @@ $(document).ready(function() {
     })
 
     // listen for submit events on the signup form
+
+    var signupForm = document.querySelector("#signup-form");
+    signupForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        // get value out of the email input
+        var emailInput = document.querySelector("#email");
+        var email = emailInput.value.trim();
+
+        // create a user using the jsonplaceholder API POST request
+        fetch('https://jsonplaceholder.typicode.com/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: email })
+        })
+        // if successful, redirect to the signup thank you
+            .then(function(response) {
+                if (response.ok && response.status === 201) {
+                    window.location.assign('./signup-thankyou.html?email=' + email);
+                }
+            })
+            // to catch errors, will only run if something happens along the way, should always do
+            .catch(function(error) {
+                alert("Error creating user");
+                console.log(error);
+            })
+    });
         // event.preventDefault();
         // get the value out of the #email input 
         // create a user using the jsonplaceholder API
