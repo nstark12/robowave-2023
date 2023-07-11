@@ -49,4 +49,12 @@ $(document).ready(function() {
         .addClass(textClass)
 
     })
+
+    // listen for submit events on the signup form
+        // event.preventDefault();
+        // get the value out of the #email input 
+        // create a user using the jsonplaceholder API
+            // if successful
+                // redirect to the signup-thankyou.html?email=<email_here>
+
 });
