@@ -79,10 +79,7 @@ $(document).ready(function() {
                 console.log(error);
             })
     });
-        // event.preventDefault();
-        // get the value out of the #email input 
-        // create a user using the jsonplaceholder API
-            // if successful
-                // redirect to the signup-thankyou.html?email=<email_here>
+       
+    
 
 });
