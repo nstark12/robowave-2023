@@ -43,6 +43,8 @@ inquirer.prompt([
             if (err) {
                 throw err
             }
+
+            console.log(`${answers.name}.html saved!`)
         })
     })
     .catch(error => console.log(error))
