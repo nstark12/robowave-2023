@@ -35,7 +35,16 @@ inquirer.prompt([
         name: 'numCodeViolations',
         message: 'How many code violations have been reported for this robot',
         default: 0,
-    }      
+    },   
+    {
+        type: 'list',
+        name: 'image',
+        message: 'Choose an image',
+        choices: () => {
+            const files = fs.readdirSync('./assets/images/thumbs')
+            return files
+        }
+    }
 ])
     .then(answers => {
         const html = getRobotPageHTML(answers)
